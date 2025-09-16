@@ -4,6 +4,7 @@ import { Monuments } from "@/data/monuments";
 import { useEffect, useRef, useState } from "react";
 import AudioPlayer from "./audioPlayer";
 import { Lyrics } from "@/data/lyrics";
+import About from "./about";
 
 export default function Ascii() {
   const imgRef = useRef<HTMLImageElement>(null);
@@ -138,6 +139,7 @@ export default function Ascii() {
           <p className="bg-[#0f0525] text-xs w-auto h-5 flex items-center">{lyric?.kr}</p>
         </div>
         <AudioPlayer src="/los-je-dan.mp3" onTimeUpdate={setCurrentTime} />
+        <About />
       </div>
     </main>
   );

@@ -63,7 +63,7 @@ export default function AudioPlayer({
   };
 
   return (
-    <div className="h-8 px-3 text-xs flex gap-2 items-center font-mono bg-[#0f0525] border-t border-l border-[#fff7d8]">
+    <div className="h-8 px-3 text-xs flex gap-2 items-center font-mono bg-[#0f0525] border-b border-r border-[#fff7d8]">
       <audio ref={audioRef} src={src} preload="auto" />
 
       <button onClick={togglePlay} className="underline underline-offset-4 hover:no-underline">
