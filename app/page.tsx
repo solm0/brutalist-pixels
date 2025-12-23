@@ -1,8 +1,6 @@
 'use client'
 
-import About from "@/component/about";
 import Menu from "@/component/Menu";
-import AudioPlayer from "@/component/Menu";
 import { Lyrics } from "@/data/lyrics";
 import { Monuments } from "@/data/monuments";
 import { useEffect, useRef, useState } from "react";
